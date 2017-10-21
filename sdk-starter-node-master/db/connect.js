@@ -9,11 +9,14 @@ var con = mysql.createConnection({
 });
 
 con.connect(function(err) {
-	if (!err) {
-		console.log('Connected');
-	} else {
+	if (err) {
 		throw err;
 	}
 });
 
+function newUser(user) {
+	con.query("INSERT INTO user_info (user_name, user_pass, 
+}
+
+// delete when everything's working and place in a differnt file
 con.end();
