@@ -1,3 +1,4 @@
+var userFile = require('../user.js');
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
@@ -15,7 +16,9 @@ con.connect(function(err) {
 });
 
 function newUser(user) {
-	con.query("INSERT INTO user_info (user_name, user_pass, 
+	con.query("INSERT INTO user_info (user_name, user_pass, user_email)" +
+		" VALUES (" + user.username + ", " + user.password + ", " +
+		user.email + ");")
 }
 
 // delete when everything's working and place in a differnt file

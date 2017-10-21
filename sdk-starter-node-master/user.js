@@ -1,9 +1,9 @@
 var user = {
-  sys_user,
-  username,
-  email,
-  password,
-  knownlang = [],
-  deslang,
-  inSession
+  sys_user: null,
+  username: null,
+  email: null,
+  password: null,
+  knownlang: null,
+  deslang: null,
+  inSession: null
 };
