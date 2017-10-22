@@ -15,7 +15,7 @@ function User(name, pass, mail) {
 	this.sys_user = null;
 	this.knownlang = null;
 	this.deslang = null;
-	this.inSession = null;
+	this.inSession = 0;
 }
 
 module.exports = User;
