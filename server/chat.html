@@ -7,11 +7,10 @@
 	<!-- CSS  -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/></head>
-	<body style="background-color:black;">
-		<title></title>
-	</head>
-	<body style="background-color:black;">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" href="./public/video/site.css">
+</head>
+	<body>
 		<nav class="light-blue lighten-1" role="navigation">
 			<div class="account-wrapper container"><a id="whatsgood" href="index.html" class="brand-logo">Langoo</a>
 			</div>
@@ -22,5 +21,32 @@
 			<div class="account-wrapper container"><a id="whatsgood" href="#" class="brand-logo">Chat</a>
 			</div>
 		</nav>
+
+		<div id="remote-media"></div>
+	  <div id="controls">
+	    <div id="preview">
+	      <p class="instructions">Hello Beautiful</p>
+	      <div id="local-media"></div>
+	      <button id="button-preview">Preview My Camera</button>
+	    </div>
+
+	    <div id="room-controls">
+	      <p class="instructions">Room Name:</p>
+	      <input id="room-name" type="text" placeholder="Enter a room name" />
+	      <button id="button-join">Join Room</button>
+	      <button id="button-leave">Leave Room</button>
+	    </div>
+
+	    <div id="log"></div>
+	  </div>
+
+	  <script src="//media.twiliocdn.com/sdk/js/common/v0.1/twilio-common.min.js"></script>
+	  <script src="//media.twiliocdn.com/sdk/js/video/releases/1.0.0/twilio-video.js"></script>
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	  <script src="/public/video/quickstart.js"></script>
+
+
+
+
 	</body>
 	</html>

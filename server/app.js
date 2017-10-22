@@ -10,7 +10,7 @@ const router = require('./src/router');
 
 // Create Express webapp
 const app = express();
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '.')));
 
 // Add body parser for Notify device registration
 app.use(bodyParser.urlencoded({extended: true}));
