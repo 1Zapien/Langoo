@@ -4266,12 +4266,12 @@ nav .button-collapse i {
 }
 
 @media only screen and (min-width: 993px) {
-  nav a.login {
+  nav a.logout {
     display: none;
   }
 }
 
-nav .login {
+nav .logout {
   float: right;
   position: relative;
   z-index: 1;
@@ -4279,7 +4279,7 @@ nav .login {
   margin: 0 18px;
 }
 
-nav .login i {
+nav .logout i {
   height: 56px;
   line-height: 56px;
 }
